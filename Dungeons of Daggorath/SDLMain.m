@@ -290,6 +290,9 @@ static void CustomApplicationMain (int argc, char **argv)
 
     /* Hand off to main application code */
     gCalledAppMainline = TRUE;
+
+    NSString *path = NSBundle.mainBundle.resourcePath;
+    [NSFileManager.defaultManager changeCurrentDirectoryPath:path];
     status = SDL_main (gArgc, gArgv);
 
     /* We're done, thank you for playing */
@@ -372,9 +375,6 @@ int main (int argc, char **argv)
         gFinderLaunch = NO;
     }
     
-    NSString *path = NSBundle.mainBundle.resourcePath;
-    [NSFileManager.defaultManager changeCurrentDirectoryPath:path];
-
 #if SDL_USE_NIB_FILE
     NSApplicationMain (argc, argv);
 #else
