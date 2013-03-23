@@ -9,10 +9,28 @@
 /* Begin PBXBuildFile section */
 		5293291B16FE06370054AE31 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5293291A16FE06370054AE31 /* Cocoa.framework */; };
 		5293292516FE06380054AE31 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5293292316FE06380054AE31 /* InfoPlist.strings */; };
-		5293292716FE06380054AE31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5293292616FE06380054AE31 /* main.m */; };
 		5293292B16FE06380054AE31 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5293292916FE06380054AE31 /* Credits.rtf */; };
-		5293292E16FE06380054AE31 /* JCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5293292D16FE06380054AE31 /* JCAppDelegate.m */; };
-		5293293116FE06380054AE31 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5293292F16FE06380054AE31 /* MainMenu.xib */; };
+		5293299116FE073A0054AE31 /* ChangeLog.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5293293716FE07390054AE31 /* ChangeLog.txt */; };
+		5293299416FE073A0054AE31 /* creature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5293293B16FE07390054AE31 /* creature.cpp */; };
+		5293299716FE073A0054AE31 /* dod.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5293294016FE07390054AE31 /* dod.cpp */; };
+		5293299B16FE073A0054AE31 /* dodgame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5293294516FE07390054AE31 /* dodgame.cpp */; };
+		529329A216FE073A0054AE31 /* dungeon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5293294D16FE073A0054AE31 /* dungeon.cpp */; };
+		529329A416FE073A0054AE31 /* enhanced.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5293295016FE073A0054AE31 /* enhanced.cpp */; };
+		529329A516FE073A0054AE31 /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5293295316FE073A0054AE31 /* SDL.framework */; };
+		529329A616FE073A0054AE31 /* SDL_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5293295416FE073A0054AE31 /* SDL_mixer.framework */; };
+		529329AF16FE073A0054AE31 /* object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5293295F16FE073A0054AE31 /* object.cpp */; };
+		529329B016FE073A0054AE31 /* oslink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5293296116FE073A0054AE31 /* oslink.cpp */; };
+		529329B116FE073A0054AE31 /* parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5293296316FE073A0054AE31 /* parser.cpp */; };
+		529329B216FE073A0054AE31 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5293296516FE073A0054AE31 /* player.cpp */; };
+		529329B316FE073A0054AE31 /* readme2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5293296716FE073A0054AE31 /* readme2.txt */; };
+		529329B616FE073A0054AE31 /* sched.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5293296D16FE073A0054AE31 /* sched.cpp */; };
+		529329B716FE073A0054AE31 /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 5293297016FE073A0054AE31 /* SDLMain.m */; };
+		529329D216FE073A0054AE31 /* viewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5293298C16FE073A0054AE31 /* viewer.cpp */; };
+		529329D716FE0E850054AE31 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529329D616FE0E840054AE31 /* OpenGL.framework */; };
+		529329D916FE1DB40054AE31 /* sound in Resources */ = {isa = PBXBuildFile; fileRef = 529329D816FE1DB30054AE31 /* sound */; };
+		529329DB16FE1DF20054AE31 /* conf in Resources */ = {isa = PBXBuildFile; fileRef = 529329DA16FE1DF10054AE31 /* conf */; };
+		529329DD16FE648B0054AE31 /* license in Resources */ = {isa = PBXBuildFile; fileRef = 529329DC16FE648B0054AE31 /* license */; };
+		52A1E36E16FE69DB0065C8EE /* dod.icns in Resources */ = {isa = PBXBuildFile; fileRef = 52A1E36D16FE69DB0065C8EE /* dod.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,12 +41,44 @@
 		5293291F16FE06370054AE31 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5293292216FE06380054AE31 /* Dungeons of Daggorath-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dungeons of Daggorath-Info.plist"; sourceTree = "<group>"; };
 		5293292416FE06380054AE31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5293292616FE06380054AE31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5293292816FE06380054AE31 /* Dungeons of Daggorath-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dungeons of Daggorath-Prefix.pch"; sourceTree = "<group>"; };
 		5293292A16FE06380054AE31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		5293292C16FE06380054AE31 /* JCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCAppDelegate.h; sourceTree = "<group>"; };
-		5293292D16FE06380054AE31 /* JCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCAppDelegate.m; sourceTree = "<group>"; };
-		5293293016FE06380054AE31 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5293293716FE07390054AE31 /* ChangeLog.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChangeLog.txt; sourceTree = "<group>"; };
+		5293293B16FE07390054AE31 /* creature.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = creature.cpp; sourceTree = "<group>"; };
+		5293293C16FE07390054AE31 /* creature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = creature.h; sourceTree = "<group>"; };
+		5293293D16FE07390054AE31 /* dod_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dod_private.h; sourceTree = "<group>"; };
+		5293294016FE07390054AE31 /* dod.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dod.cpp; sourceTree = "<group>"; };
+		5293294216FE07390054AE31 /* dod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dod.h; sourceTree = "<group>"; };
+		5293294516FE07390054AE31 /* dodgame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dodgame.cpp; sourceTree = "<group>"; };
+		5293294616FE07390054AE31 /* dodgame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dodgame.h; sourceTree = "<group>"; };
+		5293294D16FE073A0054AE31 /* dungeon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dungeon.cpp; sourceTree = "<group>"; };
+		5293294F16FE073A0054AE31 /* dungeon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dungeon.h; sourceTree = "<group>"; };
+		5293295016FE073A0054AE31 /* enhanced.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = enhanced.cpp; sourceTree = "<group>"; };
+		5293295116FE073A0054AE31 /* enhanced.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enhanced.h; sourceTree = "<group>"; };
+		5293295316FE073A0054AE31 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = "Dungeons of Daggorath/Frameworks/SDL.framework"; sourceTree = "<group>"; };
+		5293295416FE073A0054AE31 /* SDL_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL_mixer.framework; path = "Dungeons of Daggorath/Frameworks/SDL_mixer.framework"; sourceTree = "<group>"; };
+		5293295F16FE073A0054AE31 /* object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = object.cpp; sourceTree = "<group>"; };
+		5293296016FE073A0054AE31 /* object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = object.h; sourceTree = "<group>"; };
+		5293296116FE073A0054AE31 /* oslink.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = oslink.cpp; sourceTree = "<group>"; };
+		5293296216FE073A0054AE31 /* oslink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oslink.h; sourceTree = "<group>"; };
+		5293296316FE073A0054AE31 /* parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = parser.cpp; sourceTree = "<group>"; };
+		5293296416FE073A0054AE31 /* parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parser.h; sourceTree = "<group>"; };
+		5293296516FE073A0054AE31 /* player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = player.cpp; sourceTree = "<group>"; };
+		5293296616FE073A0054AE31 /* player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = player.h; sourceTree = "<group>"; };
+		5293296716FE073A0054AE31 /* readme2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme2.txt; sourceTree = "<group>"; };
+		5293296816FE073A0054AE31 /* resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resource.h; sourceTree = "<group>"; };
+		5293296A16FE073A0054AE31 /* rng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rng.h; sourceTree = "<group>"; };
+		5293296D16FE073A0054AE31 /* sched.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sched.cpp; sourceTree = "<group>"; };
+		5293296E16FE073A0054AE31 /* sched.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sched.h; sourceTree = "<group>"; };
+		5293296F16FE073A0054AE31 /* SDLMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLMain.h; sourceTree = "<group>"; };
+		5293297016FE073A0054AE31 /* SDLMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLMain.m; sourceTree = "<group>"; };
+		5293298C16FE073A0054AE31 /* viewer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = viewer.cpp; sourceTree = "<group>"; };
+		5293298D16FE073A0054AE31 /* viewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = viewer.h; sourceTree = "<group>"; };
+		529329D616FE0E840054AE31 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		529329D816FE1DB30054AE31 /* sound */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sound; path = ../../src/sound; sourceTree = "<group>"; };
+		529329DA16FE1DF10054AE31 /* conf */ = {isa = PBXFileReference; lastKnownFileType = folder; path = conf; sourceTree = "<group>"; };
+		529329DC16FE648B0054AE31 /* license */ = {isa = PBXFileReference; lastKnownFileType = folder; path = license; sourceTree = "<group>"; };
+		52A1E36D16FE69DB0065C8EE /* dod.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = dod.icns; path = ../dod.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +86,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				529329D716FE0E850054AE31 /* OpenGL.framework in Frameworks */,
 				5293291B16FE06370054AE31 /* Cocoa.framework in Frameworks */,
+				529329A516FE073A0054AE31 /* SDL.framework in Frameworks */,
+				529329A616FE073A0054AE31 /* SDL_mixer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +99,7 @@
 		5293290E16FE06370054AE31 = {
 			isa = PBXGroup;
 			children = (
+				529329D616FE0E840054AE31 /* OpenGL.framework */,
 				5293292016FE06370054AE31 /* Dungeons of Daggorath */,
 				5293291916FE06370054AE31 /* Frameworks */,
 				5293291816FE06370054AE31 /* Products */,
@@ -63,6 +117,8 @@
 		5293291916FE06370054AE31 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5293295316FE073A0054AE31 /* SDL.framework */,
+				5293295416FE073A0054AE31 /* SDL_mixer.framework */,
 				5293291A16FE06370054AE31 /* Cocoa.framework */,
 				5293291C16FE06370054AE31 /* Other Frameworks */,
 			);
@@ -82,10 +138,39 @@
 		5293292016FE06370054AE31 /* Dungeons of Daggorath */ = {
 			isa = PBXGroup;
 			children = (
-				5293292C16FE06380054AE31 /* JCAppDelegate.h */,
-				5293292D16FE06380054AE31 /* JCAppDelegate.m */,
-				5293292F16FE06380054AE31 /* MainMenu.xib */,
+				529329DC16FE648B0054AE31 /* license */,
+				529329DA16FE1DF10054AE31 /* conf */,
+				529329D816FE1DB30054AE31 /* sound */,
 				5293292116FE06380054AE31 /* Supporting Files */,
+				5293293716FE07390054AE31 /* ChangeLog.txt */,
+				5293293B16FE07390054AE31 /* creature.cpp */,
+				5293293C16FE07390054AE31 /* creature.h */,
+				5293293D16FE07390054AE31 /* dod_private.h */,
+				5293294016FE07390054AE31 /* dod.cpp */,
+				5293294216FE07390054AE31 /* dod.h */,
+				5293294516FE07390054AE31 /* dodgame.cpp */,
+				5293294616FE07390054AE31 /* dodgame.h */,
+				5293294D16FE073A0054AE31 /* dungeon.cpp */,
+				5293294F16FE073A0054AE31 /* dungeon.h */,
+				5293295016FE073A0054AE31 /* enhanced.cpp */,
+				5293295116FE073A0054AE31 /* enhanced.h */,
+				5293295F16FE073A0054AE31 /* object.cpp */,
+				5293296016FE073A0054AE31 /* object.h */,
+				5293296116FE073A0054AE31 /* oslink.cpp */,
+				5293296216FE073A0054AE31 /* oslink.h */,
+				5293296316FE073A0054AE31 /* parser.cpp */,
+				5293296416FE073A0054AE31 /* parser.h */,
+				5293296516FE073A0054AE31 /* player.cpp */,
+				5293296616FE073A0054AE31 /* player.h */,
+				5293296716FE073A0054AE31 /* readme2.txt */,
+				5293296816FE073A0054AE31 /* resource.h */,
+				5293296A16FE073A0054AE31 /* rng.h */,
+				5293296D16FE073A0054AE31 /* sched.cpp */,
+				5293296E16FE073A0054AE31 /* sched.h */,
+				5293296F16FE073A0054AE31 /* SDLMain.h */,
+				5293297016FE073A0054AE31 /* SDLMain.m */,
+				5293298C16FE073A0054AE31 /* viewer.cpp */,
+				5293298D16FE073A0054AE31 /* viewer.h */,
 			);
 			path = "Dungeons of Daggorath";
 			sourceTree = "<group>";
@@ -93,9 +178,9 @@
 		5293292116FE06380054AE31 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				52A1E36D16FE69DB0065C8EE /* dod.icns */,
 				5293292216FE06380054AE31 /* Dungeons of Daggorath-Info.plist */,
 				5293292316FE06380054AE31 /* InfoPlist.strings */,
-				5293292616FE06380054AE31 /* main.m */,
 				5293292816FE06380054AE31 /* Dungeons of Daggorath-Prefix.pch */,
 				5293292916FE06380054AE31 /* Credits.rtf */,
 			);
@@ -156,7 +241,12 @@
 			files = (
 				5293292516FE06380054AE31 /* InfoPlist.strings in Resources */,
 				5293292B16FE06380054AE31 /* Credits.rtf in Resources */,
-				5293293116FE06380054AE31 /* MainMenu.xib in Resources */,
+				5293299116FE073A0054AE31 /* ChangeLog.txt in Resources */,
+				529329B316FE073A0054AE31 /* readme2.txt in Resources */,
+				529329D916FE1DB40054AE31 /* sound in Resources */,
+				529329DB16FE1DF20054AE31 /* conf in Resources */,
+				529329DD16FE648B0054AE31 /* license in Resources */,
+				52A1E36E16FE69DB0065C8EE /* dod.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,8 +257,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5293292716FE06380054AE31 /* main.m in Sources */,
-				5293292E16FE06380054AE31 /* JCAppDelegate.m in Sources */,
+				5293299416FE073A0054AE31 /* creature.cpp in Sources */,
+				5293299716FE073A0054AE31 /* dod.cpp in Sources */,
+				5293299B16FE073A0054AE31 /* dodgame.cpp in Sources */,
+				529329A216FE073A0054AE31 /* dungeon.cpp in Sources */,
+				529329A416FE073A0054AE31 /* enhanced.cpp in Sources */,
+				529329AF16FE073A0054AE31 /* object.cpp in Sources */,
+				529329B016FE073A0054AE31 /* oslink.cpp in Sources */,
+				529329B116FE073A0054AE31 /* parser.cpp in Sources */,
+				529329B216FE073A0054AE31 /* player.cpp in Sources */,
+				529329B616FE073A0054AE31 /* sched.cpp in Sources */,
+				529329B716FE073A0054AE31 /* SDLMain.m in Sources */,
+				529329D216FE073A0054AE31 /* viewer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,14 +291,6 @@
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
-		5293292F16FE06380054AE31 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5293293016FE06380054AE31 /* en */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -206,7 +298,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -228,9 +320,9 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.7;
 			};
 			name = Debug;
 		};
@@ -238,7 +330,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -254,8 +346,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				SDKROOT = macosx;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx10.7;
 			};
 			name = Release;
 		};
@@ -263,9 +355,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Dungeons of Daggorath/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dungeons of Daggorath/Dungeons of Daggorath-Prefix.pch";
 				INFOPLIST_FILE = "Dungeons of Daggorath/Dungeons of Daggorath-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -275,9 +372,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Dungeons of Daggorath/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dungeons of Daggorath/Dungeons of Daggorath-Prefix.pch";
 				INFOPLIST_FILE = "Dungeons of Daggorath/Dungeons of Daggorath-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -302,6 +404,7 @@
 				5293293616FE06380054AE31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
