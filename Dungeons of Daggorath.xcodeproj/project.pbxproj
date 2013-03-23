@@ -30,7 +30,7 @@
 		529329D916FE1DB40054AE31 /* sound in Resources */ = {isa = PBXBuildFile; fileRef = 529329D816FE1DB30054AE31 /* sound */; };
 		529329DB16FE1DF20054AE31 /* conf in Resources */ = {isa = PBXBuildFile; fileRef = 529329DA16FE1DF10054AE31 /* conf */; };
 		529329DD16FE648B0054AE31 /* license in Resources */ = {isa = PBXBuildFile; fileRef = 529329DC16FE648B0054AE31 /* license */; };
-		52A1E36E16FE69DB0065C8EE /* dod.icns in Resources */ = {isa = PBXBuildFile; fileRef = 52A1E36D16FE69DB0065C8EE /* dod.icns */; };
+		52A1E37016FE723E0065C8EE /* dod.icns in Resources */ = {isa = PBXBuildFile; fileRef = 52A1E36F16FE723E0065C8EE /* dod.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,7 +78,7 @@
 		529329D816FE1DB30054AE31 /* sound */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sound; path = ../../src/sound; sourceTree = "<group>"; };
 		529329DA16FE1DF10054AE31 /* conf */ = {isa = PBXFileReference; lastKnownFileType = folder; path = conf; sourceTree = "<group>"; };
 		529329DC16FE648B0054AE31 /* license */ = {isa = PBXFileReference; lastKnownFileType = folder; path = license; sourceTree = "<group>"; };
-		52A1E36D16FE69DB0065C8EE /* dod.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = dod.icns; path = ../dod.icns; sourceTree = "<group>"; };
+		52A1E36F16FE723E0065C8EE /* dod.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = dod.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,7 +178,7 @@
 		5293292116FE06380054AE31 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				52A1E36D16FE69DB0065C8EE /* dod.icns */,
+				52A1E36F16FE723E0065C8EE /* dod.icns */,
 				5293292216FE06380054AE31 /* Dungeons of Daggorath-Info.plist */,
 				5293292316FE06380054AE31 /* InfoPlist.strings */,
 				5293292816FE06380054AE31 /* Dungeons of Daggorath-Prefix.pch */,
@@ -246,7 +246,7 @@
 				529329D916FE1DB40054AE31 /* sound in Resources */,
 				529329DB16FE1DF20054AE31 /* conf in Resources */,
 				529329DD16FE648B0054AE31 /* license in Resources */,
-				52A1E36E16FE69DB0065C8EE /* dod.icns in Resources */,
+				52A1E37016FE723E0065C8EE /* dod.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
