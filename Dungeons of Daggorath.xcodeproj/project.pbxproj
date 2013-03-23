@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5293291B16FE06370054AE31 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5293291A16FE06370054AE31 /* Cocoa.framework */; };
+		5293292516FE06380054AE31 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5293292316FE06380054AE31 /* InfoPlist.strings */; };
+		5293292716FE06380054AE31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5293292616FE06380054AE31 /* main.m */; };
+		5293292B16FE06380054AE31 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5293292916FE06380054AE31 /* Credits.rtf */; };
+		5293292E16FE06380054AE31 /* JCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5293292D16FE06380054AE31 /* JCAppDelegate.m */; };
+		5293293116FE06380054AE31 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5293292F16FE06380054AE31 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5293291716FE06370054AE31 /* Dungeons of Daggorath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dungeons of Daggorath.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5293291A16FE06370054AE31 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5293291D16FE06370054AE31 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		5293291E16FE06370054AE31 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5293291F16FE06370054AE31 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5293292216FE06380054AE31 /* Dungeons of Daggorath-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dungeons of Daggorath-Info.plist"; sourceTree = "<group>"; };
+		5293292416FE06380054AE31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5293292616FE06380054AE31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5293292816FE06380054AE31 /* Dungeons of Daggorath-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dungeons of Daggorath-Prefix.pch"; sourceTree = "<group>"; };
+		5293292A16FE06380054AE31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		5293292C16FE06380054AE31 /* JCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCAppDelegate.h; sourceTree = "<group>"; };
+		5293292D16FE06380054AE31 /* JCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCAppDelegate.m; sourceTree = "<group>"; };
+		5293293016FE06380054AE31 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5293291416FE06370054AE31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5293291B16FE06370054AE31 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5293290E16FE06370054AE31 = {
+			isa = PBXGroup;
+			children = (
+				5293292016FE06370054AE31 /* Dungeons of Daggorath */,
+				5293291916FE06370054AE31 /* Frameworks */,
+				5293291816FE06370054AE31 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5293291816FE06370054AE31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5293291716FE06370054AE31 /* Dungeons of Daggorath.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5293291916FE06370054AE31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5293291A16FE06370054AE31 /* Cocoa.framework */,
+				5293291C16FE06370054AE31 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5293291C16FE06370054AE31 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5293291D16FE06370054AE31 /* AppKit.framework */,
+				5293291E16FE06370054AE31 /* CoreData.framework */,
+				5293291F16FE06370054AE31 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		5293292016FE06370054AE31 /* Dungeons of Daggorath */ = {
+			isa = PBXGroup;
+			children = (
+				5293292C16FE06380054AE31 /* JCAppDelegate.h */,
+				5293292D16FE06380054AE31 /* JCAppDelegate.m */,
+				5293292F16FE06380054AE31 /* MainMenu.xib */,
+				5293292116FE06380054AE31 /* Supporting Files */,
+			);
+			path = "Dungeons of Daggorath";
+			sourceTree = "<group>";
+		};
+		5293292116FE06380054AE31 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5293292216FE06380054AE31 /* Dungeons of Daggorath-Info.plist */,
+				5293292316FE06380054AE31 /* InfoPlist.strings */,
+				5293292616FE06380054AE31 /* main.m */,
+				5293292816FE06380054AE31 /* Dungeons of Daggorath-Prefix.pch */,
+				5293292916FE06380054AE31 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5293291616FE06370054AE31 /* Dungeons of Daggorath */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5293293416FE06380054AE31 /* Build configuration list for PBXNativeTarget "Dungeons of Daggorath" */;
+			buildPhases = (
+				5293291316FE06370054AE31 /* Sources */,
+				5293291416FE06370054AE31 /* Frameworks */,
+				5293291516FE06370054AE31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dungeons of Daggorath";
+			productName = "Dungeons of Daggorath";
+			productReference = 5293291716FE06370054AE31 /* Dungeons of Daggorath.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5293290F16FE06370054AE31 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JC;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Jamie Cho";
+			};
+			buildConfigurationList = 5293291216FE06370054AE31 /* Build configuration list for PBXProject "Dungeons of Daggorath" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5293290E16FE06370054AE31;
+			productRefGroup = 5293291816FE06370054AE31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5293291616FE06370054AE31 /* Dungeons of Daggorath */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5293291516FE06370054AE31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5293292516FE06380054AE31 /* InfoPlist.strings in Resources */,
+				5293292B16FE06380054AE31 /* Credits.rtf in Resources */,
+				5293293116FE06380054AE31 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5293291316FE06370054AE31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5293292716FE06380054AE31 /* main.m in Sources */,
+				5293292E16FE06380054AE31 /* JCAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5293292316FE06380054AE31 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5293292416FE06380054AE31 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5293292916FE06380054AE31 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5293292A16FE06380054AE31 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		5293292F16FE06380054AE31 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5293293016FE06380054AE31 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5293293216FE06380054AE31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5293293316FE06380054AE31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5293293516FE06380054AE31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dungeons of Daggorath/Dungeons of Daggorath-Prefix.pch";
+				INFOPLIST_FILE = "Dungeons of Daggorath/Dungeons of Daggorath-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5293293616FE06380054AE31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dungeons of Daggorath/Dungeons of Daggorath-Prefix.pch";
+				INFOPLIST_FILE = "Dungeons of Daggorath/Dungeons of Daggorath-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5293291216FE06370054AE31 /* Build configuration list for PBXProject "Dungeons of Daggorath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5293293216FE06380054AE31 /* Debug */,
+				5293293316FE06380054AE31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5293293416FE06380054AE31 /* Build configuration list for PBXNativeTarget "Dungeons of Daggorath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5293293516FE06380054AE31 /* Debug */,
+				5293293616FE06380054AE31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5293290F16FE06370054AE31 /* Project object */;
+}

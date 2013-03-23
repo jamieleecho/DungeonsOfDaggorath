@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Dungeons of Daggorath' target in the 'Dungeons of Daggorath' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
