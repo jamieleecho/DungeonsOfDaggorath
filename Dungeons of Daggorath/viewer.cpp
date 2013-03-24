@@ -348,7 +348,7 @@ void Viewer::setup_opengl()
 {
 //	glEnable(GL_LINE_SMOOTH);
 	glDisable(GL_LINE_SMOOTH);
-	glClearColor(bgColor[0], bgColor[1], bgColor[2], 0.0);
+	glClearColor(bgColor[0], bgColor[1], bgColor[2], 0.0f);
 	glViewport(0, 0, oslink.width, oslink.height);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
@@ -360,26 +360,26 @@ void Viewer::setVidInv(bool inv)
 	if (!inv)
 	{
 		// white on black
-		bgColor[0] = 0.0;
-		bgColor[1] = 0.0;
-		bgColor[2] = 0.0;
+		bgColor[0] = 0.0f;
+		bgColor[1] = 0.0f;
+		bgColor[2] = 0.0f;
 
-		fgColor[0] = 1.0;
-		fgColor[1] = 1.0;
-		fgColor[2] = 1.0;
+		fgColor[0] = 1.0f;
+		fgColor[1] = 1.0f;
+		fgColor[2] = 1.0f;
 	}
 	else
 	{
 		// black on white
-		bgColor[0] = 1.0;
-		bgColor[1] = 1.0;
-		bgColor[2] = 1.0;
+		bgColor[0] = 1.0f;
+		bgColor[1] = 1.0f;
+		bgColor[2] = 1.0f;
 
-		fgColor[0] = 0.0;
-		fgColor[1] = 0.0;
-		fgColor[2] = 0.0;
+		fgColor[0] = 0.0f;
+		fgColor[1] = 0.0f;
+		fgColor[2] = 0.0f;
 	}
-	glClearColor(bgColor[0], bgColor[1], bgColor[2], 0.0);
+	glClearColor(bgColor[0], bgColor[1], bgColor[2], 0.0f);
 }
 
 // This is the main renderer routine.  It draws either
@@ -393,9 +393,9 @@ void Viewer::draw_game()
 	if (display_mode == MODE_MAP)
 	{
 		// Draw Map
-		glClearColor(1.0, 1.0, 1.0, 0.0);
+		glClearColor(1.0f, 1.0f, 1.0f, 0.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
-		glClearColor(bgColor[0], bgColor[1], bgColor[2], 0.0);
+		glClearColor(bgColor[0], bgColor[1], bgColor[2], 0.0f);
 		glLoadIdentity();
 		MAPPER();
 		SDL_GL_SwapBuffers();
@@ -1473,7 +1473,7 @@ void Viewer::MAPPER()
 	
 	dungeon.DROW.row = 31;
 	dungeon.DROW.col = 31;
-	glColor3f(0.0,0.0,0.0);
+	glColor3f(0.0f,0.0f,0.0f);
 	do
 	{
 		mazIdx = dungeon.RC2IDX(dungeon.DROW.row, dungeon.DROW.col);
@@ -1491,7 +1491,7 @@ void Viewer::MAPPER()
 				{  //Do we have a east door or secret door?
 					DoorOffset = ((dungeon.MAZLND[mazIdx] | 0xcc) != 0xff);  //Move door line over one into next room if we don't have wall on either side.
 					DoorOffset = DoorOffset / 4;
-					glColor3f(1.0,1.0,1.0);
+					glColor3f(1.0f,1.0f,1.0f);
 					if ((dungeon.MAZLND[mazIdx] & 0x0c) == (0x01 << 2)) {  //Is this a regular door?  Yes:
 						glBegin(GL_LINES);
 						glVertex2f(crd.newX((dungeon.DROW.col + 1) * 8 + DoorOffset), crd.newY(dungeon.DROW.row * 6));
@@ -1547,14 +1547,14 @@ void Viewer::MAPPER()
 						glVertex2f(crd.newX((dungeon.DROW.col + 1) * 8 + 0.5 + DoorOffset), crd.newY(dungeon.DROW.row * 6 + 4.25));
 						glEnd();
 					}  //Is this a regular door?
-					glColor3f(0.0,0.0,0.0);
+					glColor3f(0.0f,0.0f,0.0f);
 				}  //Do we have a east door or secret door?
 				if ((dungeon.MAZLND[mazIdx] & 0x30) == (0x01 << 4) ||
 					(dungeon.MAZLND[mazIdx] & 0x30) == (0x02 << 4))
 				{  //Do we have a south door or secret door?
 					DoorOffset = ((dungeon.MAZLND[mazIdx] | 0x33) != 0xff);  //Move door line over one into next room if we don't have wall on either side.
 					DoorOffset = DoorOffset / 4;
-					glColor3f(1.0,1.0,1.0);
+					glColor3f(1.0f,1.0f,1.0f);
 					if ((dungeon.MAZLND[mazIdx] & 0x30) == (0x01 << 4)) {  //Is this a regular door?  Yes:
 						glBegin(GL_LINES);
 						glVertex2f(crd.newX(dungeon.DROW.col * 8), crd.newY((dungeon.DROW.row + 1) * 6 + DoorOffset));
@@ -1611,7 +1611,7 @@ void Viewer::MAPPER()
 						glEnd();
 
 					}
-					glColor3f(0.0,0.0,0.0);
+					glColor3f(0.0f,0.0f,0.0f);
 				}  //Do we have a south door or secret door?
 			}  //Do we need to mark the doors on the scroll maps?
 		}
@@ -1623,7 +1623,7 @@ void Viewer::MAPPER()
 		}
 	} while (dungeon.DROW.row != 0xFF);
 
-	glColor3f(1.0,1.0,1.0);
+	glColor3f(1.0f,1.0f,1.0f);
 	if (showSeerMap == true)
 	{
 		// Mark Objects
@@ -1909,12 +1909,12 @@ void Viewer::drawString_internal(int x, int y, dodBYTE * str, int len)
 	int ctr;
 	char c;
 	glLoadIdentity();
-	glTranslatef(crd.newX(x*8), crd.newY(((y+1)*8)), 0.0);
+	glTranslatef(crd.newX(x*8), crd.newY(((y+1)*8)), 0.0f);
 	for (ctr=0; ctr < len; ++ctr)
 	{
 		c = dod_to_ascii(*(str + ctr));
 		drawCharacter(c);
-		glTranslatef(crd.newXa(8), 0.0, 0.0);
+		glTranslatef(crd.newXa(8), 0.0f, 0.0f);
 	}
 }
 
@@ -1938,11 +1938,11 @@ void Viewer::drawString(int x, int y, const char * str, int len)
 {
 	int ctr;
 	glLoadIdentity();
-	glTranslatef(crd.newX(x*8), crd.newY(((y+1)*8)), 0.0);
+	glTranslatef(crd.newX(x*8), crd.newY(((y+1)*8)), 0.0f);
 	for (ctr=0; ctr < len; ++ctr)
 	{
 		drawCharacter(*(str + ctr));
-		glTranslatef(crd.newXa(8), 0.0, 0.0);
+		glTranslatef(crd.newXa(8), 0.0f, 0.0f);
 	}
 }
 

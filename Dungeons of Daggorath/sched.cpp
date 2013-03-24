@@ -42,6 +42,7 @@ extern OS_Link	oslink;
 // Constructor
 Scheduler::Scheduler()
 {
+    strcpy((char *)DERR, "\x1D\x1D\x1D\xff");
 	Reset();
 }
 
