@@ -292,7 +292,7 @@ static void CustomApplicationMain (int argc, char **argv)
     gCalledAppMainline = TRUE;
 
     NSString *path = NSBundle.mainBundle.resourcePath;
-    [NSFileManager.defaultManager changeCurrentDirectoryPath:path];
+    [[NSFileManager defaultManager] changeCurrentDirectoryPath:path];
     status = SDL_main (gArgc, gArgv);
 
     /* We're done, thank you for playing */

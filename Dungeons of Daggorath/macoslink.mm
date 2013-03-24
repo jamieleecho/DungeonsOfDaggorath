@@ -11,21 +11,21 @@
 #include "macoslink.h"
 
 void updatePathsForOSX(OS_Link &osLink) {
-    @autoreleasepool {
-        // Get the user location of the user options file
-        NSFileManager *fileManager = NSFileManager.defaultManager;
-        NSString *userDir = fileManager.applicationSupportDirectory;
-        NSString *userOptionsFile = [NSString pathWithComponents:[NSArray arrayWithObjects:userDir, @"opts.ini", nil]];
-        
-        // Copy the application options file to the user location
-        if (![fileManager fileExistsAtPath:userOptionsFile]) {
-            NSError *error;
-            NSString *optionsFile = [NSString pathWithComponents:[NSArray arrayWithObjects:[NSString stringWithUTF8String:osLink.confDir], @"opts.ini", nil]];
-            [fileManager copyItemAtPath:optionsFile toPath:userOptionsFile error:&error];
-        }
-        
-        // Update the paths in osLink
-        strcpy(osLink.confDir, userDir.UTF8String);
-        strcpy(osLink.baseSavedDir, userDir.UTF8String);
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    // Get the user location of the user options file
+    NSFileManager *fileManager = NSFileManager.defaultManager;
+    NSString *userDir = fileManager.applicationSupportDirectory;
+    NSString *userOptionsFile = [NSString pathWithComponents:[NSArray arrayWithObjects:userDir, @"opts.ini", nil]];
+    
+    // Copy the application options file to the user location
+    if (![fileManager fileExistsAtPath:userOptionsFile]) {
+        NSError *error;
+        NSString *optionsFile = [NSString pathWithComponents:[NSArray arrayWithObjects:[NSString stringWithUTF8String:osLink.confDir], @"opts.ini", nil]];
+        [fileManager copyItemAtPath:optionsFile toPath:userOptionsFile error:&error];
     }
+    
+    // Update the paths in osLink
+    strcpy(osLink.confDir, userDir.UTF8String);
+    strcpy(osLink.baseSavedDir, userDir.UTF8String);
+    [pool release];
 }
