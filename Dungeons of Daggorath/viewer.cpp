@@ -2247,7 +2247,8 @@ void Viewer::aboutBox(void)
  drawString(1,15, "MATTHEW EYSTER", 14);
  drawString(1,16, "DAN GENDREAU", 12);
  drawString(1,17, "JOSH ALBRIGHT", 13);
- drawString(1,18, "MANY OTHERS NOT MENTIONED HERE!", 31);
+ drawString(1,18, "JAMIE CHO", 9);
+ drawString(1,19, "MANY OTHERS NOT MENTIONED HERE!", 31);
 
   // Update the screen
  SDL_GL_SwapBuffers();
