@@ -29,6 +29,10 @@ using namespace std;
 #include "object.h"
 #include "creature.h"
 #include "enhanced.h"
+#ifdef __MACH__
+#include "macoslink.h"
+#endif
+
 
 extern Creature		creature;
 extern Object		object;
@@ -44,10 +48,9 @@ extern Parser		parser;
 OS_Link::OS_Link() : width(0), height(0), bpp(0), flags(0),
 					 audio_rate(44100), audio_format(AUDIO_S16),
 					 audio_channels(2), audio_buffers(512),
-					 gamefileLen(50), keylayout(0), keyLen(256)
+					 gamefileLen(sizeof(gamefile)), keylayout(0), keyLen(256)
 {
-#define MACOSX
-#ifdef MACOSX
+#ifdef __MACH__
 	strcpy(pathSep,"/");
 #else
 	strcpy(pathSep,"\\");
@@ -56,6 +59,7 @@ OS_Link::OS_Link() : width(0), height(0), bpp(0), flags(0),
 	strcpy(confDir, "conf");
 	strcpy(soundDir, "sound");
 	strcpy(savedDir, "saved");
+	strcpy(baseSavedDir, "");
 	memset(gamefile,0,gamefileLen);
 }
 
@@ -67,6 +71,10 @@ OS_Link::OS_Link() : width(0), height(0), bpp(0), flags(0),
 // uses defaults set by loadDefaults function (1024x768)
 void OS_Link::init()
 {
+#ifdef __MACH__
+    updatePathsForOSX(*this);
+#endif
+    
 	loadOptFile();
 
 	Uint32 ticks1, ticks2;
@@ -945,7 +953,7 @@ void OS_Link::menu_string(char *newString, const char *title, int maxLength)
 void OS_Link::loadOptFile(void)
  {
  char     inputString[80];
- char     fn[20];
+ char     fn[MAX_FILENAME_LENGTH + 1];
  int      in;
  ifstream fin;
  char *   breakPoint;
@@ -1073,7 +1081,7 @@ void OS_Link::loadOptFile(void)
 bool OS_Link::saveOptFile(void)
  {
  ofstream fout;
- char     fn[MAX_FILENAME_LENGTH];
+ char     fn[MAX_FILENAME_LENGTH + 1];
 
  sprintf(fn, "%s%s%s", confDir, pathSep, "opts.ini");
 

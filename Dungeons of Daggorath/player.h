@@ -19,6 +19,10 @@ is held by Douglas J. Morgan.
 
 #include "dod.h"
 
+#ifdef PDROP
+#undef PDROP
+#endif
+
 class Player
 {
 public:

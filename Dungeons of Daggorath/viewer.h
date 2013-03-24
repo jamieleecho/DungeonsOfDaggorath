@@ -58,7 +58,7 @@ public:
 	void		PCRLF();
 	void		PRTOBJ(int X, bool highlite);
 	void		OUTSTI(dodBYTE * comp);
-	void		OUTSTR(dodBYTE * str);
+	void		OUTSTR(const dodBYTE * str);
 	void		OUTCHR(dodBYTE c);
 	void		TXTXXX(dodBYTE c);
 	void		TXTSCR();

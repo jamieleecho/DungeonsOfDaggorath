@@ -24,7 +24,9 @@ is held by Douglas J. Morgan.
 #include "creature.h"
 #include "oslink.h"
 #include "enhanced.h"
-
+#ifdef __MACH__
+#include <sys/stat.h>
+#endif
 
 extern OS_Link		oslink;
 extern Creature		creature;
@@ -1855,13 +1857,15 @@ void Player::PZLOAD()
 	int preLen;
 	memset(parser.TOKEN, -1, 33);
 	memset(oslink.gamefile,0,oslink.gamefileLen);
-	strcpy(oslink.gamefile,oslink.savedDir);
+    if ((oslink.savedDir[0] != oslink.pathSep[0]) && (oslink.baseSavedDir[0] != '\0')) {
+        strcat(oslink.gamefile, oslink.baseSavedDir);
+        strcat(oslink.gamefile,oslink.pathSep);
+    }
+	strcat(oslink.gamefile,oslink.savedDir);
 	strcat(oslink.gamefile,oslink.pathSep);
 	preLen = strlen(oslink.gamefile);
 	if (parser.GETTOK())
 	{
-		strcpy(oslink.gamefile,oslink.savedDir);
-		strcat(oslink.gamefile,oslink.pathSep);
 		tctr = 0;
 		while (parser.TOKEN[tctr] != 0xFF)
 		{
@@ -1895,7 +1899,15 @@ void Player::PZSAVE()
 	int preLen;
 	memset(parser.TOKEN, -1, 33);
 	memset(oslink.gamefile,0,oslink.gamefileLen);
-	strcpy(oslink.gamefile,oslink.savedDir);
+    if ((oslink.savedDir[0] != oslink.pathSep[0]) && (oslink.baseSavedDir[0] != '\0')) {
+        strcat(oslink.gamefile, oslink.baseSavedDir);
+        strcat(oslink.gamefile,oslink.pathSep);
+    }
+	strcat(oslink.gamefile,oslink.savedDir);
+#ifdef __MACH__
+    mkdir(oslink.gamefile, S_IRWXU);
+#endif
+    
 	strcat(oslink.gamefile,oslink.pathSep);
 	preLen = strlen(oslink.gamefile);
 	if (parser.GETTOK())

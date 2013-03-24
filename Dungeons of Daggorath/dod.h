@@ -214,6 +214,10 @@ public:
 	dodBYTE		P_CCCOL;
 };
 
+#ifdef __MACH__
+#define CDB CreatureDefinitionBlock
+#endif
+
 // Creature definition block
 // Holds the data for a creature type.
 class CDB

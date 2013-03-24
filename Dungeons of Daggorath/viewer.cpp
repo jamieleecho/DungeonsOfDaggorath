@@ -1080,7 +1080,7 @@ void Viewer::OUTSTI(dodBYTE * comp)
 	OUTSTR(&parser.STRING[1]);
 }
 
-void Viewer::OUTSTR(dodBYTE * str)
+void Viewer::OUTSTR(const dodBYTE * str)
 {
 	int ctr = 0;
 	while (*(str + ctr) != 0xFF)

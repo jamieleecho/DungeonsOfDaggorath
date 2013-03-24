@@ -51,7 +51,7 @@ public:
 	// Public Data Fields
 	Task	TCBLND[38];
 
-	dodBYTE DERR[15];
+	const dodBYTE DERR[15] = "\x1D\x1D\x1D\xff";
 
 	enum { // task IDs
 		TID_CLOCK		= 0,
