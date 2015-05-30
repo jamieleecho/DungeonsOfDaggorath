@@ -359,7 +359,7 @@ public:
 		{ clear(); }
 
 	// Convenience Setter
-	void setValues(int t, int d, long f, long p, long n, long c, bool e)
+	void setValues(int t, int d, Uint32 f, Uint32 p, Uint32 n, long c, bool e)
 	{
 		type = t;
 		data = d;

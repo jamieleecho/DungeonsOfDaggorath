@@ -81,9 +81,9 @@ bool SetOption(char *opt)
 
 	ParseOpt(opt,name,value);
 
-	int nlen=strlen(name);
+	size_t nlen=strlen(name);
 	if (!nlen) return false; //  no opt name, error
-	int vlen=strlen(value);
+	size_t vlen=strlen(value);
 
 	if (0==strncmp(name,"GFX",nlen) && vlen) {
 		if (0==strncmp(value,"NORMAL",vlen)) {
@@ -203,7 +203,7 @@ bool SetCheat(char *str)
 
 	ParseOpt(str,name,value);
 
-	int len=strlen(name);
+	size_t len=strlen(name);
 	if (!len) return false; // no cheat name, error
 
 	if (0==strncmp(name,"NONE",len)) {

@@ -1934,7 +1934,7 @@ char Viewer::dod_to_ascii(dodBYTE c)
 }
 
 // Draws a string
-void Viewer::drawString(int x, int y, const char * str, int len)
+void Viewer::drawString(int x, int y, const char * str, size_t len)
 {
 	int ctr;
 	glLoadIdentity();
@@ -2052,7 +2052,8 @@ void Viewer::plotPoint(double X, double Y)
 ****************************************************************/
 void Viewer::drawMenu(menu mainMenu, int menu_id, int highlight)
  {
- int x, y, length;
+ int x, y;
+ size_t length;
 
  // Clear screen
  glColor3fv(bgColor);
@@ -2107,7 +2108,7 @@ void Viewer::drawMenu(menu mainMenu, int menu_id, int highlight)
 ****************************************************************/
 void Viewer::drawMenuList(int x, int y, const char *title, const char *list[], int listSize, int highlight)
  {
- int length;
+ size_t length;
 
   // Clear screen
  glColor3fv(bgColor);
@@ -2214,7 +2215,7 @@ void Viewer::drawMenuStringTitle(const char *title)
 void Viewer::drawMenuString(const char *currentString)
  {
  drawString(0, 2, currentString, strlen(currentString));
- drawString(strlen(currentString), 2, "_", 1);
+ drawString((int)strlen(currentString), 2, "_", 1);
 
   // Update the screen
  SDL_GL_SwapBuffers();

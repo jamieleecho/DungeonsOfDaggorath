@@ -65,7 +65,7 @@ void Creature::Reset()
 	if (game.VisionScroll)  //Do we need to replace a snake with a blob w/ a vision scroll?  Yes:
 		Utils::LoadFromDecDigit(CMXLND, "984300000000240666000000000406840010000000866400222222244801");
 	else  //Do we need to replace a snake with a blob w/ a vision scroll?  No:
-		Utils::LoadFromDecDigit(CMXLND, "994200000000240666000000000406840010000000866400222222244801");
+		Utils::LoadFromDecDigit(CMXLND, "919200000000204666000000002431840010900000000900212222244811");
 	Utils::LoadFromDecDigit(MOVTAB, "0310130");
 }
 

@@ -78,7 +78,7 @@ void OS_Link::init()
 	loadOptFile();
 
 	Uint32 ticks1, ticks2;
-	const SDL_VideoInfo * info = '\0';
+	const SDL_VideoInfo * info = NULL;
 	if(SDL_Init(SDL_INIT_VIDEO | SDL_INIT_TIMER | SDL_INIT_AUDIO) < 0)
 	{
 		fprintf(stderr, "Video initialization failed: %s\n", SDL_GetError());

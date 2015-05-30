@@ -1854,7 +1854,7 @@ void Player::PUSE()
 void Player::PZLOAD()
 {
 	int tctr = 0;
-	int preLen;
+	size_t preLen;
 	memset(parser.TOKEN, -1, 33);
 	memset(oslink.gamefile,0,oslink.gamefileLen);
     if ((oslink.savedDir[0] != oslink.pathSep[0]) && (oslink.baseSavedDir[0] != '\0')) {
@@ -1896,7 +1896,7 @@ void Player::PZLOAD()
 void Player::PZSAVE()
 {
 	int tctr = 0;
-	int preLen;
+	size_t preLen;
 	memset(parser.TOKEN, -1, 33);
 	memset(oslink.gamefile,0,oslink.gamefileLen);
     if ((oslink.savedDir[0] != oslink.pathSep[0]) && (oslink.baseSavedDir[0] != '\0')) {
