@@ -55,7 +55,7 @@ void ParseOpt(const char *opt, char* name, char*val)
 		opt++;
 
 	// search for next space in string
-	char *pDelim=strchr(opt,' ');
+	const char *pDelim=strchr(opt,' ');
 	if (pDelim) {
 		// copy name part before space
 		strncpy(name,opt,pDelim-opt);

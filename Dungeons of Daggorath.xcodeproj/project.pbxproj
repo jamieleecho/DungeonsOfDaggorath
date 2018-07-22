@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -228,7 +228,7 @@
 				ORGANIZATIONNAME = "Jamie Cho";
 			};
 			buildConfigurationList = 5293291216FE06370054AE31 /* Build configuration list for PBXProject "Dungeons of Daggorath" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -375,7 +375,7 @@
 				GCC_PREFIX_HEADER = "Dungeons of Daggorath/Dungeons of Daggorath-Prefix.pch";
 				INFOPLIST_FILE = "Dungeons of Daggorath/Dungeons of Daggorath-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Resources";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
@@ -394,7 +394,7 @@
 				GCC_PREFIX_HEADER = "Dungeons of Daggorath/Dungeons of Daggorath-Prefix.pch";
 				INFOPLIST_FILE = "Dungeons of Daggorath/Dungeons of Daggorath-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Resources";
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;

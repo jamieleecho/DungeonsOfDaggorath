@@ -14,6 +14,8 @@ is held by Douglas J. Morgan.
 //
 // Implementation of the Viewer class
 
+#include <GLKit/GLKMatrix4.h>
+
 #include "viewer.h"
 #include "oslink.h"
 #include "player.h"
@@ -352,7 +354,8 @@ void Viewer::setup_opengl()
 	glViewport(0, 0, oslink.width, oslink.height);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
-	gluOrtho2D(0, oslink.width, 0, oslink.height);
+	GLKMatrix4 orthoMat = GLKMatrix4MakeOrtho(0, oslink.width, 0, oslink.height, -1.0f, 1.0f);
+    glLoadMatrixf(orthoMat.m);
 }
 
 void Viewer::setVidInv(bool inv)
